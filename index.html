@@ -41,11 +41,11 @@
 					<li class="nav__item">
 						<a href="#payment-section" class="nav__link" id="service">Оплата</a>
 					</li>
-					<li class="nav__item">
+					<!-- <li class="nav__item">
 						<a href="#questions-section" class="nav__link" id="question">Питання</a>
-					</li>
+					</li> -->
 					<li class="nav__item">
-						<a href="#personal-section" class="nav__link" id="contact">Кабінет</a>
+						<a href="https://kompot.uz.ua:9443" target="blank" class="nav__link" id="contact">Кабінет</a>
 					</li>
 				</ul>
 			</nav>
@@ -74,7 +74,6 @@
 						</div>
 					</div>
 				</div>
-				<hr>
 			</section>
 			<section id="price-section" class="price">
 				<h2 class="section__title">Тарифи</h2>
@@ -149,8 +148,34 @@
 							href='http://kompot.uz.ua/compot/wp-content/themes/pacific/public/img/A4_qrpay_1.pdf'>Перейти</a>
 					</div>
 				</div>
+				<span>*після оплати інтернет активовується автоматично. Якщо він не активувався, то зателефонуйте нам для
+					уточнення.</span>
 			</section>
-			<section id="questions-section" class="question"></section>
+			<!-- <section id="questions-section" class="question">
+				<h2 class="section__title">Часті запитання</h2>
+				<div class="question__block">
+					<div class="question__item">
+						<div class="question__ask">Як заміряти швидкість інтернету?</div>
+						<div class="question__ans"></div>
+					</div>
+					<div class="question__item">
+						<div class="question__ask">Як оплатити через термінали EasyPay?</div>
+						<div class="question__ans"></div>
+					</div>
+					<div class="question__item">
+						<div class="question__ask">Як оплатити через форму Приват Банку/EasyPay?</div>
+						<div class="question__ans"></div>
+					</div>
+					<div class="question__item">
+						<div class="question__ask">Як оплатити використовуючи QR Code Приват Банку?</div>
+						<div class="question__ans"></div>
+					</div>
+					<div class="question__item">
+						<div class="question__ask"></div>
+						<div class="question__ans"></div>
+					</div>
+				</div>
+			</section> -->
 			<section id="personal-section" class="personal"></section>
 			<div class="up">
 				<a href="#"><span class="fas fa-angle-up"></span></a>
@@ -184,7 +209,7 @@
 						width="400" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 				</div>
 			</section>
-			<section class="footer__copywright"></section>
+			<section class="footer__copywright">Copyright © 2021 <a href="#">КОМПОТ</a>.</section>
 		</footer>
 	</div>
 	<div id="popup" class="popup">
@@ -195,16 +220,13 @@
 					<form action="#" id="form" class="form__body">
 						<h2 class="form__titie">Замовити дзвінок</h2>
 						<div class="form__item">
-							<label for="formName" class="form__label">Ім'я*</label>
-							<input id="formName" type="text" name="name" class="form__input">
+							<input id="formName" type="text" name="name" class="form__input" placeholder="Ваше ім'я">
 						</div>
 						<div class="form__item">
-							<label for="formPhone" class="form__label">Номер*</label>
-							<input id="formPhone" type="tel" name="phone" class="form__input">
+							<input id="formPhone" type="tel" name="phone" class="form__input" placeholder="Ваш телефон">
 						</div>
 						<div class="form__item">
-
-							<input id="submit" type="submit" class="form__input" value="Надіслати">
+							<input id="submit" type="submit" class="form__input btn" value="Надіслати">
 						</div>
 					</form>
 				</div>
@@ -220,27 +242,25 @@
 					<form action="#" id="form" class="form__body">
 						<h2 class="form__titie">Замовити дзвінок</h2>
 						<div class="form__item">
-							<label for="formName" class="form__label">Ім'я*</label>
-							<input id="formName" type="text" name="name" class="form__input">
+							<input id="formName" type="text" name="name" class="form__input" placeholder="Ваше ім'я*" required>
 						</div>
 						<div class="form__item">
-							<label for="formPhone" class="form__label">Номер телефону*</label>
-							<input id="formPhone" type="tel" name="phone" class="form__input">
+							<input id="formPhone" type="tel" name="phone" class="form__input" placeholder="Ваш телефон*"
+								required>
 						</div>
 						<div class="form__item">
-							<label for="formStreet" class="form__label">Вулиця*</label>
-							<input id="formStreet" type="text" name="street" class="form__input">
+							<input id="formStreet" type="text" name="street" class="form__input" placeholder="Вулиця*"
+								required>
 						</div>
 						<div class="form__item">
-							<label for="formNumber" class="form__label">№ будинку*</label>
-							<input id="formNumber" type="number" name="number" class="form__input">
+							<input id="formNumber" type="number" name="number" class="form__input" placeholder="№ будинку*"
+								required>
 						</div>
 						<div class="form__item">
-							<label for="formNApp" class="form__label">№ квартири</label>
-							<input id="formNApp" type="number" name="app" class="form__input">
+							<input id="formNApp" type="number" name="app" class="form__input" placeholder="№ квартири">
 						</div>
 						<div class="form__item">
-							<input id="submit" type="submit" class="form__input" value="Надіслати">
+							<input id="submit" type="submit" class="form__input btn" value="Надіслати">
 						</div>
 					</form>
 				</div>
@@ -248,6 +268,8 @@
 		</div>
 	</div>
 	<script src="js/script.js"></script>
+	<script src="js/callback.js"></script>
+
 </body>
 
 </html>
